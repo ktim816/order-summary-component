@@ -1,3 +1,4 @@
+const path = require('path');
 const {fontFamily} = require('tailwindcss/defaultTheme');
 const colorStyles = require('./color-styles');
 
@@ -18,10 +19,14 @@ module.exports = {
         '3xl': ['1.75rem', '2.3125rem'],
       },
       backgroundImage: {
-        hero: 'url("src/assets/images/illustration-hero.svg")',
-        pattern: 'url("src/assets/images/pattern-background-desktop.svg")',
-        'pattern-mobile':
-          'url("src/assets/images/pattern-background-mobile.svg")',
+        hero: `url("${path.resolve(
+          __dirname,
+          'src/assets/images/illustration-hero.svg'
+        )}")`,
+        pattern: `url("${path.resolve(
+          __dirname,
+          'src/assets/images/pattern-background-desktop.svg'
+        )}")`,
       },
       maxWidth: {
         auto: 'auto',
