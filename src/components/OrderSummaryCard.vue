@@ -41,7 +41,7 @@ const props = defineProps<{
 }
 
 .content {
-  @apply sm:px-12 px-6 sm:pt-11 pt-8 sm:pb-12 pb-6 bg-white;
+  @apply sm:px-12 px-6 sm:pt-11 pt-8 sm:pb-10 pb-6 bg-white;
 }
 
 .info {
