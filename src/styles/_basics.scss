@@ -1,6 +1,6 @@
 html,
 body {
-  @apply min-h-screen;
+  @apply min-h-screen bg-body font-medium bg-pattern bg-contain bg-no-repeat bg-top text-grey text-base;
 }
 
 html {
@@ -16,4 +16,29 @@ html {
 a,
 span {
   @apply inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-dark font-black;
+}
+
+h1 {
+  @apply sm:text-3xl text-xl;
+}
+
+p {
+  @apply sm:text-base text-md leading-[25px];
+}
+
+a {
+  @apply text-primary underline font-bold sm:text-sm text-xs transition-colors;
+
+  &:hover {
+    @apply text-accent no-underline;
+  }
 }
